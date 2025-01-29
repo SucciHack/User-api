@@ -38,7 +38,6 @@ export default function RegisterForm() {
         })
         setLoading(false)
         toast.success("created successfully")
-        window.location.reload()
           reset()
         } catch (error) {
           setLoading(false)
