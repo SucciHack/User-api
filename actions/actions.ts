@@ -1,5 +1,5 @@
-
-const API = "http://localhost:3000/api/v1/users"
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL
+const API = `${baseUrl}/api/v1/users`
 export async function fetchUsers() {
     try {
         const res = await fetch(API)
